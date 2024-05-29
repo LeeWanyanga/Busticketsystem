@@ -1,7 +1,7 @@
 from django.contrib import admin
 from django.urls import re_path
 
-from Backend import views
+from Busticketsystem.busticketmanagement import views
 
 urlpatterns = [
     # path('admin/', admin.site.urls),

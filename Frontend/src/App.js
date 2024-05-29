@@ -1,15 +1,13 @@
-import logo from './logo.svg';
-import './App.css';
-import Ticket from './Ticket';
+import Sidenav from "./Sidenav";
 
-function App() {
-  return (
-    <div className="container">
-      <Ticket/>
 
-    </div>
-  
-  );
+const App = () => {
+  return ( 
+    <>
+    <Sidenav/>
+    
+    </>
+   );
 }
-
+ 
 export default App;
