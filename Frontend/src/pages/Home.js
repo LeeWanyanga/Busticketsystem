@@ -1,11 +1,13 @@
 import React from 'react';
 import Sidenav from '../Sidenav';
 import { Carousel } from 'react-bootstrap';
+import Typography from '@mui/material/Typography';
+
 
 const WelcomeHome = () => {
   return (
     <div style={{ fontFamily: 'Arial', padding: '20px' }}>
-      <h2 style={{ color: 'blue', fontSize: '2rem', textAlign: 'center', marginLeft: '50px' }}> Welcome Home</h2>
+      <h2 style={{ fontSize: '2rem', textAlign: 'center', marginLeft: '50px' }}> Welcome to Bus Ticket 101</h2>
       <Carousel>
         <Carousel.Item>
           <img
