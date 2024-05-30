@@ -14,14 +14,15 @@ import ListItemText from '@mui/material/ListItemText';
 import Toolbar from '@mui/material/Toolbar';
 import Typography from '@mui/material/Typography';
 import { IoMdHome } from "react-icons/io";
-import { IoCall } from "react-icons/io5";
-import { SiYoutubeshorts } from "react-icons/si";
+import { IoTicketSharp } from "react-icons/io5";
 import { MdSubscriptions } from "react-icons/md";
-import { IoHappyOutline } from "react-icons/io5";
+import { IoPersonCircleSharp } from "react-icons/io5";
+import { IoCall } from "react-icons/io5";
 import Contact from './pages/About';
 import { styled, useTheme } from '@mui/material/styles'; 
 import MenuIcon from '@mui/icons-material/Menu';
 import Home from './pages/Home';
+import About from './pages/About';
 
 const drawerWidth = 240;
 
@@ -72,7 +73,7 @@ export default function Sidenav() {
             <MenuIcon />
           </IconButton>
           <Typography variant="h6" component="div" sx={{ flexGrow: 1, textAlign: 'center' }}>
-            <h3 style={{ color: 'red', fontSize: '1.5rem', textAlign: 'center' }}> THE SYNERGIES</h3>
+            <h3 style={{ color: 'red', fontSize: '1.5rem', textAlign: 'center' }}> Bus Ticket 101</h3>
           </Typography>
         </Toolbar>
       </AppBar>
@@ -84,36 +85,42 @@ export default function Sidenav() {
         </DrawerHeader>
         <Divider />
         <List>
-          <ListItem enablePadding  onClick={() => setMenudata("Home")}>
+
+          <ListItem enablePadding button  onClick={() => setMenudata("Home")}>
             <StyledListItemIcon>
               <IoMdHome />
             </StyledListItemIcon>
             <StyledListItemText primary="Home" />
           </ListItem>
-          <ListItem disablePadding button onClick={() => setMenudata("Contact")}>
+         
+          <ListItem disablePadding button  onClick={() => setMenudata("Book Your Tickets")}>
             <StyledListItemIcon>
-              <IoCall />
+            <IoTicketSharp />
             </StyledListItemIcon>
-            <StyledListItemText primary="Contact" />
+            <StyledListItemText primary="Book Your Tickets" />
           </ListItem>
-          <ListItem disablePadding button  onClick={() => setMenudata("Shorts")}>
-            <StyledListItemIcon>
-              <SiYoutubeshorts />
-            </StyledListItemIcon>
-            <StyledListItemText primary="Shorts" />
-          </ListItem>
-          <ListItem disablePadding button onClick={() => setMenudata("Subscriptions")}>
+
+          <ListItem disablePadding  onClick={() => setMenudata("Destinations")}>
             <StyledListItemIcon>
               <MdSubscriptions />
             </StyledListItemIcon>
-            <StyledListItemText primary="Subscriptions" />
+            <StyledListItemText primary="Destinations" />
           </ListItem>
-          <ListItem disablePadding button onClick={() => setMenudata("You")}>
+
+          <ListItem disablePadding  onClick={() => setMenudata("Contact Us")}>
             <StyledListItemIcon>
-              <IoHappyOutline />
+            <IoCall />
             </StyledListItemIcon>
-            <StyledListItemText primary="You" />
+            <StyledListItemText primary="Contact Us" />
           </ListItem>
+
+          <ListItem disablePadding  onClick={() => setMenudata("Profile")}>
+            <StyledListItemIcon>
+            <IoPersonCircleSharp />
+            </StyledListItemIcon>
+            <StyledListItemText primary="profile" />
+          </ListItem>
+
         </List>
         <Divider />
       </Drawer>

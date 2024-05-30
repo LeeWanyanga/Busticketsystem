@@ -1,5 +1,5 @@
 import React from 'react';
-import Sidenav from "../Sidenav";
+import Sidenav from '../Sidenav';
 import { Carousel } from 'react-bootstrap';
 
 const WelcomeHome = () => {
@@ -11,6 +11,7 @@ const WelcomeHome = () => {
           <img
             className="d-block w-100"
             src="https://via.placeholder.com/800x400"
+            // Place photos here
             alt="First slide"
           />
           <Carousel.Caption>
@@ -22,6 +23,8 @@ const WelcomeHome = () => {
           <img
             className="d-block w-100"
             src="https://via.placeholder.com/800x400"
+                        // Place photos here
+
             alt="Second slide"
           />
           <Carousel.Caption>
@@ -33,6 +36,8 @@ const WelcomeHome = () => {
           <img
             className="d-block w-100"
             src="https://via.placeholder.com/800x400"
+                        // Place photos here
+
             alt="Third slide"
           />
           <Carousel.Caption>
